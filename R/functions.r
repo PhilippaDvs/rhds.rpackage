@@ -3,7 +3,6 @@
 #' @param filename output file name
 #' @return none
 #' @export
-
 my.write.table <- function(x, filename) {
   cat("saving", basename(filename), "...\n")
   write.table(x, file = filename, row.names = T, col.names = T, sep = "\t")
@@ -56,8 +55,6 @@ extract.participant <- function(id) {
 #' @param id TCGA barcode
 #' @return tissue code
 #' @export
-
-
 extract.tissue <- function(id) {
   sub("TCGA-[^-]+-[^-]+-([0-9]+)[^-]+-.*", "\\1", id)
 }
@@ -69,7 +66,6 @@ extract.tissue <- function(id) {
 #' @param resultsdir directory to extract files to
 #' @return none
 #' @export
-
 extract.file <- function(tar.file, extract.file, new.file, resultsdir) {
   # get file path to extracted file
   x.file <-
