@@ -31,4 +31,4 @@ extract.file <- function(tar.file, extract.file, new.file, resultsdir) {
   unlink(dirname(x.file), recursive = TRUE)
 }
 
-my.write.table <- function(x, filename) {
+
